@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Amit 💗</title>
+
+<style>
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", sans-serif;
+    text-align: center;
+    color: #914765;
+    background: linear-gradient(135deg,#ffe0ec,#f3ddff,#fff0f5);
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    padding: 55px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 580px;
+    background: rgba(255,255,255,.88);
+    padding: 30px 23px;
+    border-radius: 28px;
+    box-shadow: 0 10px 40px #d875a544;
+}
+
+h1 { color: #e75480; font-size: 34px; }
+h2 { color: #d94d83; }
+
+p {
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.emoji {
+    font-size: 70px;
+    animation: bounce 2s infinite;
+}
+
+button {
+    padding: 13px 23px;
+    margin: 8px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover { transform: scale(1.08); }
+
+.yes { background: #e75480; color: white; }
+.no { background: #ffe0ec; color: #bd3e71; }
+.next { background: white; color: #d94d83; }
+
+.letter {
+    background: #fff7fb;
+    border: 1px dashed #e99abd;
+    border-radius: 20px;
+    padding: 22px;
+    text-align: left;
+    line-height: 2;
+    margin: 20px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.gallery div {
+    background: #fff0f6;
+    border-radius: 18px;
+    padding: 20px 8px;
+}
+
+#response {
+    color: #ce3978;
+    font-size: 19px;
+    line-height: 1.8;
+    font-weight: bold;
+    margin-top: 20px;
+    white-space: pre-line;
+}
+
+.heart {
+    position: fixed;
+    bottom: -40px;
+    pointer-events: none;
+    z-index: 5;
+    animation: floatUp 6s linear forwards;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes bounce {
+    50% { transform: translateY(-10px); }
+}
+
+@media(max-width: 400px) {
+    h1 { font-size: 29px; }
+    .gallery { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- WELCOME -->
+<section id="home">
+<div class="card">
+    <div class="emoji">🧸💗</div>
+    <h1>Hey Amittt! 🥹💕</h1>
+
+    <p>
+        Helloooo, Mr. Special! 🌷<br>
+        I have made something just for you.
+        And no, you cannot skip it! Hehe 🙈
+    </p>
+
+    <p>
+        So sit comfortably, smile a little,
+        and open your tiny surprise. 💌
+    </p>
+
+    <button class="yes" onclick="goTo('letter')">
+        Open your surprise 🎀
+    </button>
+</div>
+</section>
+
+<!-- LOVE LETTER -->
+<section id="letter">
+<div class="card">
+    <div class="emoji">💌🌸</div>
+    <h1>A Letter for Amit</h1>
+
+    <div class="letter">
+        Dear Amit, 💗<br><br>
+
+        I don't know how to explain everything I feel,
+        but I wanted to try something different to make
+        you smile. So here I am, expressing my feelings
+        through this little website. 🥹💕<br><br>
+
+        You know, sometimes a person becomes special
+        without even realizing it. Their messages make
+        an ordinary day better, their smile stays in
+        your mind, and even the smallest conversations
+        become beautiful memories. 🌷<br><br>
+
+        And somehow, you became that person for me.
+        Your name itself brings a little smile to my face.
+        Maybe I'm being cheesy, but let me be cheesy
+        just this once! 🤭💖<br><br>
+
+        I don't expect every day to be perfect.
+        I just think that having someone to share
+        silly jokes with, talk about random things,
+        and care about each other would be really special.<br><br>
+
+        I wanted you to know that you matter to me.
+        This website is small, but the thought behind
+        it is genuine. And yes, I probably spent more
+        time making this than I should admit! 😂💗<br><br>
+
+        So, Amit, please keep going.
+        Your most important question is waiting
+        on the next page. 🙈💌
+    </div>
+
+    <button class="next" onclick="goTo('reasons')">
+        Next page 💕
+    </button>
+</div>
+</section>
+
+<!-- REASONS -->
+<section id="reasons">
+<div class="card">
+    <div class="emoji">🐻🌷</div>
+    <h1>Why You're Special</h1>
+
+    <div class="gallery">
+        <div>😊<br><br>Your smile</div>
+        <div>💬<br><br>Our conversations</div>
+        <div>🫶<br><br>Your presence</div>
+        <div>💖<br><br>The happiness you bring</div>
+    </div>
+
+    <p>
+        It's not about being perfect.
+        It's about finding someone who makes
+        ordinary moments feel a little magical. ✨
+    </p>
+
+    <p>
+        And you, Amit, have a little place
+        in my heart. 💗
+    </p>
+
+    <button class="next" onclick="goTo('proposal')">
+        The big question 🥹
+    </button>
+</div>
+</section>
+
+<!-- PROPOSAL -->
+<section id="proposal">
+<div class="card">
+    <div class="emoji" id="bear">🧸❤️</div>
+
+    <h1>Amit, Listen... 💌</h1>
+
+    <p>
+        Okay, I'm nervous now. 🙈<br>
+        But here goes nothing...
+    </p>
+
+    <h2>Will you be mine? 💍💗</h2>
+
+    <p>
+        Will you let me annoy you, care for you,
+        share silly jokes, and make beautiful
+        memories with you? 🥹💕
+    </p>
+
+    <button class="yes" onclick="sayYes()">
+        YESSSS! 💖
+    </button>
+
+    <button class="no" onclick="sayNo()">
+        No 🙈
+    </button>
+
+    <div id="response" aria-live="polite"></div>
+</div>
+</section>
+
+<!-- ENDING -->
+<section id="ending">
+<div class="card">
+    <div class="emoji">💖🧸💖</div>
+    <h1>One Last Thing, Amit!</h1>
+
+    <p>
+        Whatever your answer is, thank you for
+        being someone worth making this little
+        surprise for. 🌷
+    </p>
+
+    <p>
+        Sending you the biggest virtual hug ever! 🫂
+    </p>
+
+    <button class="yes" onclick="goTo('home')">
+        Read it again 💌
+    </button>
+</div>
+</section>
+
+<footer>
+    Made with love, just for Amit 💗<br>
+    A tiny website with lots of feelings 🌸
+</footer>
+
+<script>
+let noCount = 0;
+
+const noMessages = [
+    "Areee Amittt! 🥺 You clicked No already? My little heart is crying! 💗",
+    "Wait wait wait! 😭 Please reconsider, Mr. Cutie! 🧸💕",
+    "Are you sure, Amit? I'll send you 100 virtual hugs! 🫂💖",
+    "My teddy bear is crying now. Look what you did! 🧸😭",
+    "Okay, I'll give you one more chance to make me smile! 🥹🌷",
+    "Amittt! Pretty please? 🥺👉👈 Just think about it once more! 💗",
+    "Even the hearts are sad now! 💔😭 Sending you extra cuteness!",
+    "Hehe, you can take your time! 💕 But my teddy still hopes for a Yes! 🧸"
+];
+
+function goTo(id) {
+    document.getElementById(id).scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+function sayNo() {
+    const response = document.getElementById("response");
+
+    response.textContent =
+        noMessages[Math.min(noCount, noMessages.length - 1)];
+
+    noCount++;
+
+    document.getElementById("bear").textContent =
+        noCount % 2 === 0 ? "🥺🧸💗" : "😭🧸💔";
+
+    createHearts(5);
+}
+
+function sayYes() {
+    document.getElementById("bear").textContent = "🥹💖🧸";
+
+    document.getElementById("response").textContent =
+        "OMGGGG AMIT SAID YESSS! 😭💖🎉\n\n" +
+        "YOU JUST MADE ME THE HAPPIEST PERSON EVER! 🥹💕\n\n" +
+        "Sending you a million hugs and kisses! 🫂💋\n" +
+        "This moment is officially extra special! 🌷💗";
+
+    document.querySelector(".no").style.display = "none";
+
+    createHearts(45);
+}
+
+function createHearts(amount) {
+    for (let i = 0; i < amount; i++) {
+        setTimeout(() => {
+            const heart = document.createElement("div");
+            heart.className = "heart";
+
+            const emojis = ["💗", "💕", "💖", "💘", "🌸", "💝"];
+            heart.textContent =
+                emojis[Math.floor(Math.random() * emojis.length)];
+
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.fontSize = (18 + Math.random() * 25) + "px";
+            heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+
+            document.body.appendChild(heart);
+
+            setTimeout(() => heart.remove(), 8000);
+        }, i * 100);
+    }
+}
+
+setInterval(() => createHearts(1), 900);
+</script>
+
+</body>
+</html>
